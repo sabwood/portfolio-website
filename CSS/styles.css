@@ -4,7 +4,7 @@
   --tertiary-link-color: #489c79;
   --button-primary-color: #357b70;
   --button-secondary-color: #e0b354;
-  --button-primary-text-color: #f4f4f4;
+  --button-primary-text-color: #ebebeb;
   --button-secondary-text-color: #2b2b2b;
   --primary-sun-color: #edc655;
   --secondary-sun-color: #f76414;
@@ -179,6 +179,11 @@ button:focus,
 
 #about-list {
   list-style-type: none;
+}
+
+#about-button {
+  background-color: var(--button-primary-color);
+  color: var(--button-primary-text-color);
 }
 
 .sun {
