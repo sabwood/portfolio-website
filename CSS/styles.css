@@ -146,15 +146,16 @@ button:focus,
   .project-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px;
     margin: 0;
+    padding: 10px;
   }
 }
 
 .project-list__item {
   display: flex inline-block;
   background-color: var(--list-background-color);
-  padding: 20px;
+  padding: 10px;
   width: auto;
   min-height: auto;
   margin: 0;
@@ -171,7 +172,31 @@ button:focus,
   height: 200px;
 }
 
-.about-page {
+.project-image1 {
+  width: 275px;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.project-image2 {
+  width: 275px;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.project-image3 {
+  width: 190px;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.project-image4 {
+  width: 200px;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.about-paragraph {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
@@ -179,9 +204,14 @@ button:focus,
 
 #about-list {
   list-style-type: none;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #about-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--button-primary-color);
   color: var(--button-primary-text-color);
 }
