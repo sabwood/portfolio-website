@@ -1,15 +1,11 @@
 :root {
-  --primary-link-color: #00675c;
-  --secondary-link-color: #05676e;
-  --tertiary-link-color: #489c79;
-  --button-primary-color: #357b70;
-  --button-secondary-color: #e0b354;
-  --button-primary-text-color: #ebebeb;
-  --button-secondary-text-color: #2b2b2b;
-  --primary-sun-color: #edc655;
-  --secondary-sun-color: #f76414;
-  --list-background-color: #d3d3d3;
-  --background-color: #f0f0f0;
+  --primary-link-color: #000000;
+  --secondary-link-color: #290138;
+  --tertiary-link-color: #2E1438;
+  --button-primary-color: #380112;
+  --button-primary-text-color: #ffebfd;
+  --list-background-color: #eacde7;
+  --background-color: #ffeffe;
   --heading-font-weight: 700px;
 }
 
@@ -80,11 +76,6 @@ button:focus,
   opacity: 0.8;
 }
 
-.button_secondary {
-  background-color: var(--button-secondary-color);
-  color: var(--button-secondary-text-color);
-}
-
 .page-header {
   display: flex;
   width: 100%;
@@ -116,15 +107,15 @@ button:focus,
 .profile {
   max-width: 700px;
   margin: 0 auto;
+  text-align: center;
 }
 
-.profile__portrait {
-  float: left;
-  width: 250px;
-  height: auto;
-  margin-right: 40px;
-  max-width: 400px;
-  border-radius: 50%;
+#profile__header {
+  font-size: 60px;
+}
+
+#profile__description {
+  font-style: italic;
 }
 
 .page-footer {
@@ -166,6 +157,18 @@ button:focus,
   grid-row: auto/auto;
 }
 
+.project-list__item-title {
+  height: 100px;
+}
+
+.project-list__item-image {
+  height: 225px;
+}
+
+.project-list__item-content {
+  padding-bottom: 10px;
+}
+
 .project-image {
   width: 100%;
   border-radius: 10px;
@@ -196,7 +199,13 @@ button:focus,
   height: 200px;
 }
 
-.about-paragraph {
+.project-image5 {
+  width: 275px;
+  border-radius: 10px;
+  height: auto;
+}
+
+#about-paragraph {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
@@ -216,26 +225,6 @@ button:focus,
   color: var(--button-primary-text-color);
 }
 
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
 .work-page {
   margin: 0 auto;
   text-align: center;
@@ -244,36 +233,6 @@ button:focus,
 .contact-page {
   margin: 0 auto;
   text-align: center;
-}
-
-@keyframes color-change {
-  from {
-    fill: var(--primary-sun-color);
-  }
-
-  to {
-    fill: var(--secondary-sun-color);
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
 }
 
 @media all and (max-width: 500px) {
